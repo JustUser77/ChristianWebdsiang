@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 16px;
+  background: #fff;
+  margin: 0;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+input[type="search"] {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+}
+form {
+  font-size: 12px;
+  color: #444;
+  margin-bottom: 12px;
+}
+label {
+  margin-right: 12px;
+  cursor: pointer;
+}
+input[type="radio"] {
+  margin-right: 4px;
+}
+input[type="text"] {
+  width: 60px;
+  padding: 4px 6px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+.grid {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.card {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px;
+  width: calc(33.333% - 8px);
+  box-sizing: border-box;
+  text-align: center;
+}
+.card img {
+  width: 120px;
+  height: 160px;
+  object-fit: cover;
+  margin-bottom: 6px;
+}
+.title {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.author {
+  font-weight: 600;
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+.publisher {
+  font-size: 12px;
+  color: #888;
+}
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 8px);
+  }
+}
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+}

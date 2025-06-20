@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <input type="search" id="searchInput" placeholder="Search" aria-label="Search">
+    <form id="searchForm">
+      <label>
+        <input type="radio" name="searchBy" value="title" checked>
+        Title
+      </label>
+      <label>
+        <input type="radio" name="searchBy" value="author">
+        Author
+      </label>
+      <label>
+        <input type="radio" name="searchBy" value="publisher">
+        Publisher
+      </label>
+      <label>
+        <input type="radio" name="searchBy" value="titleYear">
+        Title & Year
+      </label>
+      <input type="text" id="yearInput" placeholder="Year">
+    </form>
+
+    <h3>Popular</h3>
+    <div class="grid" id="popularBooks"></div>
+
+    <h3>Our Books</h3>
+    <div class="grid" id="booksGrid">
+      <div class="card" data-id="1" data-title="Menguasai Pemrograman Berorientasi Objek" data-author="Ade Rahmat Iskandar" data-publisher="Informatika" data-year="2020">
+        <img src="https://storage.googleapis.com/a1aa/image/54ce8495-98fd-405d-bb54-46accc930373.jpg" alt="Book cover showing a red and black abstract design with text in Indonesian">
+        <div class="title">Menguasai Pemrograman Berorientasi Objek</div>
+        <div class="author">Ade Rahmat Iskandar</div>
+        <div class="publisher">Informatika 2020</div>
+      </div>
+      <div class="card" data-id="2" data-title="Dasar-Dasar Pemrograman dengan .NET" data-author="Ade Rahmat Iskandar" data-publisher="Informatika" data-year="2019">
+        <img src="https://storage.googleapis.com/a1aa/image/a399260c-c7d6-477e-0cef-d3892efe335d.jpg" alt="Book cover with blue background and .NET logo with text in Indonesian">
+        <div class="title" style="font-weight: normal; font-size: 13px;">Dasar-Dasar Pemrograman dengan .NET</div>
+        <div class="author">Ade Rahmat Iskandar</div>
+        <div class="publisher">Informatika 2019</div>
+      </div>
+      <div class="card" data-id="3" data-title="Metodologi Pengembangan Sistem Informasi" data-author="Samiaji Sarosa" data-publisher="Indeks" data-year="2017">
+        <img src="https://storage.googleapis.com/a1aa/image/46d53bad-394b-4224-acb0-21e680a284b6.jpg" alt="Book cover with purple background and technology icons with text in Indonesian">
+        <div class="title">Metodologi Pengembangan Sistem Informasi</div>
+        <div class="author">Samiaji Sarosa</div>
+        <div class="publisher">Indeks 2017</div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
